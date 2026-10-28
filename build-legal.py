@@ -67,7 +67,7 @@ TEMPLATE = """<!doctype html>
   <header class="top">
     <div class="wrap">
       <a class="brand" href="/"><img src="/img/logo.svg" alt="">Pots &amp; Plans</a>
-      <nav><a class="btn small" href="https://enocherdner.github.io/pots-and-plans-demo/">Try the demo</a></nav>
+      <nav><a href="/">Home</a></nav>
     </div>
   </header>
   <main>
