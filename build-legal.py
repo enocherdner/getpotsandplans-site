@@ -7,7 +7,7 @@ Handles what those files use: # and ## headings, paragraphs, "- " lists, **bold*
 import html, re, sys
 from pathlib import Path
 
-SRC = Path(sys.argv[1] if len(sys.argv) > 1 else Path.home() / "Projects/pots-and-plans/docs/legal")
+SRC = Path(sys.argv[1] if len(sys.argv) > 1 else Path.home() / "Projects/pp-main/docs/legal")
 HERE = Path(__file__).parent
 PAGES = [("privacy-policy.md", "privacy", "Privacy policy"), ("terms-of-use.md", "terms", "Terms of use")]
 

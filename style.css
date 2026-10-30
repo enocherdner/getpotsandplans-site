@@ -19,7 +19,7 @@ body {
   color: var(--ink);
   font: 17px/1.6 "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: var(--brand); }
 h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.12; margin: 0 0 .5em; letter-spacing: -0.01em; }
 .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
