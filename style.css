@@ -132,11 +132,13 @@ footer a { color: var(--ink-soft); }
   .top nav .hide-sm { display: none; }
   .features { grid-template-columns: 1fr; }
   section { padding: 56px 0; }
-  .hero-phones { min-height: 400px; }
-  .hero-phones .phone { width: 180px; border-radius: 30px; padding: 7px; }
+  /* Both phones sized off the screen width, so the front one never runs past the right edge. */
+  .hero { overflow-x: clip; padding-bottom: 40px; }
+  .hero-phones { min-height: min(400px, 104vw); }
+  .hero-phones .phone { width: min(170px, 42vw); border-radius: 30px; padding: 7px; }
   .hero-phones .phone img { border-radius: 24px; }
-  .hero-phones .phone.back { transform: translateX(calc(-50% - 12px)) rotate(-6deg) scale(.9); }
-  .hero-phones .phone.front { transform: translateX(calc(-50% + 90px)) rotate(4deg); }
-  .hero-phones .potsy { width: 64px; left: 2px; bottom: 0; }
+  .hero-phones .phone.back { transform: translateX(calc(-50% - min(24px, 6vw))) rotate(-6deg) scale(.9); }
+  .hero-phones .phone.front { transform: translateX(calc(-50% + min(80px, 19vw))) rotate(4deg); }
+  .hero-phones .potsy { width: min(64px, 16vw); left: 0; bottom: 56px; z-index: 2; }
   .rail figure { flex-basis: 210px; }
 }
